@@ -1,0 +1,213 @@
+@font-face {
+    font-family: MTNBrighterSans-bold;
+    src: url(font/MTNBrighterSans-Bold.otf);
+}
+
+@font-face {
+    font-family: MTNBrighterSans-Regular;
+    src: url(font/font/MTNBrighterSans-Regular.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "MTNBrighterSans-Regular";
+}
+
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 100rem;
+    padding: 0 3.2rem;
+    width: 100%;
+    background-color: #fefefe;
+}
+
+.header__position {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    padding-bottom: 0;
+}
+
+.header--title {
+    display: flex;
+    align-items: center;
+    font-family: "MTNBrighterSans-Bold";
+    font-size: 2.4rem;
+    gap: 0.5rem;
+    color: #0f1107;
+}
+
+.header--logo {
+    width: 6rem;
+}
+
+.header--notifications {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-end;
+    justify-content: stretch;
+    flex-direction: row;
+    align-self: flex-start;
+    font-size: 1.6rem;
+    color: #72757c;
+    padding-top: 1rem;
+}
+
+.header--notifications__items {
+    width: 3rem;
+}
+
+.header--notification__texts {
+    display: flex;
+    height: 3rem;
+    gap: 0.5rem;
+}
+
+.header--notification__texts-1 {
+    align-self: flex-end;
+    font-size: 1.8rem;
+    line-height: 0.8;
+    padding-bottom: 0.5rem;
+}
+
+.red-popup {
+    width: 4rem;
+}
+
+.header--controls {
+    display: flex;
+    justify-content: end;
+    margin: 0 auto;
+    max-width: 100rem;
+    padding: 0 3.2rem;
+    width: 100%;
+    gap: 0.4rem;
+    font-size: 1.4rem;
+    transform: translateY(-1rem);
+}
+
+.header--controls__item-logout {
+    padding-left: 1.5rem;
+}
+
+.gradient-container {
+    background-image: linear-gradient( to bottom, #e6b101, #f1e6ce 80%, #efeeed 80%, #fff 100%);
+    height: 90vh;
+    margin: 0 auto;
+    max-width: 100rem;
+    width: 100%;
+}
+
+.connected--text-box {
+    margin: 0 auto;
+    width: 100%;
+    padding: 3rem;
+    height: 90%;
+    padding-bottom: 0;
+}
+
+.connected--title {
+    height: 9rem;
+    background-color: gold;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    padding: 0 3rem;
+    gap: 3rem;
+    position: relative;
+}
+
+.connected--title::after {
+    content: url(img/ethernet.svg);
+    position: absolute;
+    top: 4rem;
+    right: 3.5rem;
+}
+
+.connected--table {
+    height: 85%;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+}
+
+ion-icon {
+    font-size: 3rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.3rem;
+    color: #ffd700;
+    margin-top: 1rem;
+    font-weight: lighter;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.connected--text {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.connected--primary {
+    font-family: "MTNBrighterSans-Bold";
+    font-size: 2.4rem;
+}
+
+.connected--secondary {
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.connected--table {
+    padding: 6rem 1rem 0 11.3rem;
+}
+
+.connected--table__size {
+    width: 100%;
+    text-align: left;
+}
+
+.button {
+    padding: 0.6rem 1.2rem;
+    background-color: gold;
+    border-radius: 2px;
+    width: fit-content;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.connected--primary__smaller {
+    font-family: "MTNBrighterSans-Bold";
+    font-size: 2rem;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+    background-color: #f5f5f5;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+th,
+td {
+    padding: 1rem;
+    font-size: 1.4rem;
+}
